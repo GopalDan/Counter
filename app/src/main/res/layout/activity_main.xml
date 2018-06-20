@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5722"
+    tools:context="com.counter.android.counter.MainActivity">
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="0"
+        android:textColor="#f5f5f5"
+        android:textSize="75sp" />
+
+    <Button
+        android:id="@+id/up_button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/count"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/oval_shape_button"
+        android:backgroundTint="#607d8b"
+        android:onClick="countup"
+        android:text="UP"
+        android:textColor="#18ffff"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/down_button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/up_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/oval_shape_button"
+        android:backgroundTint="#607d8b"
+        android:onClick="countdown"
+        android:text="DOWN"
+        android:textColor="#18ffff"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#607d8b"
+        android:onClick="reset"
+        android:text="RESET"
+        android:textColor="#18ffff" />
+
+
+
+</RelativeLayout>
